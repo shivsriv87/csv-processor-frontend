@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import DataTable from './Datatable';
+import Datatable from './Datatable.jsx';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -100,14 +100,14 @@ const CsvUploader = () => {
       {uploadedData.length > 0 && (
         <div className="mt-6">
           <h2 className="text-lg font-semibold text-gray-700 mb-2">Uploaded File</h2>
-          <DataTable data={uploadedData} />
+          <Datatable data={uploadedData} />
         </div>
       )}
 
       {processedData.length > 0 && (
         <div className="mt-6">
           <h2 className="text-lg font-semibold text-gray-700 mb-2">Processed File</h2>
-          <DataTable data={processedData} />
+          <Datatable data={processedData} />
         </div>
       )}
 
