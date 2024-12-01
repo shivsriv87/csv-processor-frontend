@@ -34,7 +34,7 @@ const CsvUploader = () => {
     formData.append('file', file);
 
     try {
-      const response = await axios.post('https://csv-processor-backend.onrender.com//api/csv/upload', formData);
+      const response = await axios.post('https://csv-processor-backend.onrender.com/api/csv/upload', formData);
       setProcessedData(response.data.processedData);
       toast.success('File processed successfully!', {
         position: 'top-right',
