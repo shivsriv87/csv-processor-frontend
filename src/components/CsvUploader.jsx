@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import DataTable from './DataTable';
+import DataTable from './Datatable';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
